@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
-}
+ body {
+     font-family: 'Inter', sans-serif;
+     display: grid;
+     place-items: center;
+     height: 100vh;
+     background-color: #E5E5E5;
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ * {
+     box-sizing: border-box;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ .container {
+     width: 550px;
+     height: 705px;
+     background-color: white;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ .header {
+     height: 55px;
+     background-color: #F55A5A;
+     color: white;
+     display: flex;
+     gap: 5px;
+     align-items: center;
+     font-size: 14.46px;
+     justify-content: center;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .header--logo {
+     height: 24px;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ .cards {
+     padding: 30px 40px;
+ }
+
+ .card {
+     display: flex;
+     gap: 20px;
+     padding: 15px 0;
+     height: 200px;
+     border-bottom: 2px solid #f5f5f5;
+ }
+
+ .card:last-of-type {
+     border-bottom: none;
+ }
+
+
+ .card--details {
+     padding: 20px 0;
+ }
+
+ .card--image {
+     border-radius: 5px;
+     width: 125px;
+     height: 168px;
+ }
+
+ .row {
+     display: flex;
+     align-items: center;
+ }
+
+ .location {
+     font-size: 10.24px;
+     color: #2B283A;
+     margin-left: 3px;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+ }
+
+ .cta {
+     text-decoration: underline;
+     font-size: 10.24px;
+     color: #918E9B;
+     margin-left: 15px;
+ }
+
+ .card--title {
+     color: #2B283A;
+     font-size: 25px;
+     margin: 10px 0 0;
+ }
+
+ .date {
+     color: #2B283A;
+     font-size: 10.24px;
+     font-weight: 600;
+     margin-top: 15px;
+ }
+
+ .card--description {
+     font-size: 10.24px;
+     color: #2B283A;
+ }
